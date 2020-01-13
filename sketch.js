@@ -18,8 +18,9 @@ function draw() {
   rotateY(theta * mouseX * 0.001);
   //pass image as texture
   texture(img);
-  sphere(150);
   noStroke();
+  sphere(150);
+
   pop();
   translate(440, 0, 0);
   theta += 0.005;
