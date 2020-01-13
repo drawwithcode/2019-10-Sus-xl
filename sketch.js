@@ -16,10 +16,14 @@ function draw() {
   rotateZ(theta * mouseX * 0.001);
   rotateX(theta * mouseX * 0.001);
   rotateY(theta * mouseX * 0.001);
-  //pass image as texture
+
+  let locX = mouseX - width / 6;
+  let locY = mouseY - height / 6;
+  pointLight(250, 250, 250, locX, locY, 1500);
+
   texture(img);
   noStroke();
-  sphere(150);
+  sphere(200);
 
   pop();
   translate(440, 0, 0);
