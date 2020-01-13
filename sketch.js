@@ -7,7 +7,7 @@ function setup() {
 }
 
 function draw() {
-  background(250);
+  background('#97CBD5');
   translate(0, 0, 0);
 
 
